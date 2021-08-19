@@ -49,9 +49,9 @@
     <nav class="navbar navbar-expand-lg ">
         <div class="container">
           <!-- logo -->
-          <div class="logo_wrap">
+          <div class="logo">
             <a href="#">
-              <img src="img/logo.jpg" alt="NIIT - ICT HÀ NỘI">
+              <img src="img/logo.jpg" alt="NIIT - ICT HÀ NỘI" class="img-reponsive">
             </a>
           </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -132,9 +132,9 @@
           </div>
       
             <div class="top_cart_wrap">
-            <a  href="#" style="text-decoration: none; ">
+            <a  href="admin/login.html" style="text-decoration: none; ">
               &nbsp	
-              Đăng kí học
+              Đăng nhập
             </a> 
           </div>
           </form>
@@ -169,24 +169,23 @@
      <!--          KẾT THÚC SLIDESHOW         -->
       <br>
      <!--           HIGHLIGHTS COURSE      -->
-    <section class="noidung" >
-        <div>
-          <div class="container">
-            <div class="heading1">
-              <h3> KHÓA HỌC NỔI BẬT </h3>
-                <p >Với chúng tôi, việc học không chỉ dừng lại ở việc trang bị kiến thức mà còn là môi trường trau dồi kỹ năng sống và giúp bạn kết nối thế giới bằng phương pháp hoàn toàn mới chỉ có tại NIIT - ICT HÀ NỘI.</p>
-                <span>****</span>
-            </div>
-            <div class="heading2">
-              <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img src="img/khoahoc1.jpg" class="card-img-top" alt="LaptrinhWeb">
-                    <div class="card-body">
-                      <h5 >  <a href="#" class="card-title" style=" text-decoration:none">Khóa học Lập trình Web nâng cao với Java </a></h5>
-                    </div>
-                  </div>
+ 
+    <div class="container">
+      <div class="heading1">
+        <h3> KHÓA HỌC NỔI BẬT </h3>
+        <p >Với chúng tôi, việc học không chỉ dừng lại ở việc trang bị kiến thức mà còn là môi trường trau dồi kỹ năng sống và giúp bạn kết nối thế giới bằng phương pháp hoàn toàn mới chỉ có tại NIIT - ICT HÀ NỘI.</p>
+          <span>****</span>
+      </div>
+      <div class="heading2">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="img/khoahoc1.jpg" class="card-img-top" alt="LaptrinhWeb">
+                <div class="card-body">
+                  <h5 >  <a href="#" class="card-title" style=" text-decoration:none">Khóa học Lập trình Web nâng cao với Java </a></h5>
                 </div>
+            </div>
+        </div>
                 <div class="col">
                   <div class="card">
                     <img src="img/khoahoc_internet.jpg" class="card-img-top" alt="Khoahoc">
@@ -211,7 +210,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+        </div>
               <br>
               <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col">
@@ -249,7 +248,7 @@
               </div>
             </div>
           </div> 
-        </div>
+      </div>
     
      <!--          END HIGHLIGHTS COURSE         -->
 
@@ -374,8 +373,7 @@
           </div>
           </div>
         </div>
-      </div>
-    </section>
+  
      <!--          END EDUCATION         -->
       <br>
      <!--           TEACHER      -->

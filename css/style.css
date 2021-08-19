@@ -17,6 +17,9 @@
     padding: 1%;
    
 }
+.img-reponsive{
+    width: 100%;
+}
 
 /* CSS for CONTACT */
 .container-fluid{
@@ -44,6 +47,10 @@ ul li a{
     font-size: 12px;
 }
 /* CSS ... */
+.logo{
+    width: 20%;
+    float: left;
+}
 .nav-item{
     font-size: 14px;
     font: optional;
@@ -82,11 +89,6 @@ ul li a{
     width: 20px;
     height: 20px;
     
-}
-.slideshow{
-    position: relative;
-    margin: auto;
-    width: 100%;
 }
 
 /* CSS Khóa học */
@@ -257,3 +259,4 @@ p{
     font-size: 15px;
     color: white;
 }
+
