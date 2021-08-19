@@ -378,6 +378,7 @@
       <br>
      <!--           TEACHER      -->
     <div class="container">
+      <div class="row">
       <div class="col-md-4 col-sm-12">
         <div class="get_started_services">
           <div class="get_icon_des">
@@ -408,6 +409,8 @@
           </div>
         </div>
       </div>
+      </div>
+      
     </div>
      <!--         END TEACHER         -->
      
