@@ -1,6 +1,10 @@
+.content {
+    margin-left: 25%;
+    margin-top: -288px;
+}
  
 #header{
-    background-color: rgb(17, 17, 17);
+    background-color: rgb(36, 35, 35);
     
     width: 100%;
 }
@@ -16,34 +20,28 @@
 }
 a{
     color: white;
+
 }
 a:hover{
-    color: #6495ED;
+    color: #6495ED
 }
 .ad_logout{
     margin-left: 1000px;
     margin-top: -33px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.content{
-    width: 100%;
-    height: auto;
-    display: flex;
-    background: #eee;
-}
-.content-left{
+.btn-group-vertical{
     background-color: rgb(99, 98, 98);
-    width: 23%;
-    height:600px;
+   
+   
 }
-
 ul li{
    list-style: none;
 }
 .dropdown-item:active {
     
     text-decoration: none;
-    background-color: #6495ED;
+    background-color: #4af1fd;
 }
 .row {
     
@@ -59,31 +57,45 @@ ul li{
     padding: .5rem 1rem;
 }
 .nav-item1 i{
-   
+    color: white;
     font-size: 18px;
     margin-left: 15px;
 }
 .nav-item1 i:hover{
-    color: #6495ED;
+    color: #6495ED
 }
 .nav-item1 a:hover{
-    color: #6495ED;
+    color: #6495ED
 }
 .dropdown-menu a:hover{
-    color: #6495ED;
+    color: #6495ED
 }
-/* NỘI DUNG*/
-.content-right{
-    width: 75%;
-    margin-left: 5%;
- }
- .content-right h2{
-     color: #6495ED;
-      margin-top: 3%;
+#xoa{
+    color: black;
+}
+.title-module{
+    font-size: 25px;
+    color: gray;
+    font-weight: bold;
 
- }
- .btn-primary {
-    color: rgb(29, 28, 28);
-    background-color: #cbced1;
-    border-color: #c6c7c9;
+}
+
+    .table.list-course, table.list-course td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+    }
+    table{
+        margin-top: 40px;
+        background-color:whitesmoke;
+        color: honeydew;
+    }
+    .name{
+        background-color:gray;
+        color: lavender;
+    }
+body{
+    position: relative;
+    z-index: 100%;
+    
 }
