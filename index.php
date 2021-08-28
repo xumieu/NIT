@@ -1,3 +1,9 @@
+<?php
+$conn = mysqli_connect('localhost', 'root', '', 'niit');
+$sql = "select * from posts where postid";
+$q = mysqli_query($conn, $sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -171,12 +177,13 @@
 
   <!--          KẾT THÚC SLIDESHOW         -->
   <br>
-  <!--           HIGHLIGHTS COURSE      -->
+  <!--           KHÓA HỌC NỔI BẬT     -->
 
   <div class="container">
     <div class="heading1">
       <h3> KHÓA HỌC NỔI BẬT </h3>
-      <p>Với chúng tôi, việc học không chỉ dừng lại ở việc trang bị kiến thức mà còn là môi trường trau dồi kỹ năng sống và giúp bạn kết nối thế giới bằng phương pháp hoàn toàn mới chỉ có tại NIIT - ICT HÀ NỘI.</p>
+      <p>Với chúng tôi, việc học không chỉ dừng lại ở việc trang bị kiến thức mà còn là môi trường trau dồi kỹ năng sống
+        và giúp bạn kết nối thế giới bằng phương pháp hoàn toàn mới chỉ có tại NIIT - ICT HÀ NỘI.</p>
       <span>****</span>
     </div>
     <div class="heading2">
@@ -185,7 +192,8 @@
           <div class="card">
             <img src="img/khoahoc1.jpg" class="card-img-top" alt="LaptrinhWeb">
             <div class="card-body">
-              <h5> <a href="#" class="card-title" style=" text-decoration:none">Khóa học Lập trình Web nâng cao với Java </a></h5>
+              <h5> <a href="#" class="card-title" style=" text-decoration:none">Khóa học Lập trình Web nâng cao với Java
+                </a></h5>
             </div>
           </div>
         </div>
@@ -193,7 +201,8 @@
           <div class="card">
             <img src="img/khoahoc_internet.jpg" class="card-img-top" alt="Khoahoc">
             <div class="card-body">
-              <h5> <a href="#" class="card-title" style=" text-decoration:none"> Khóa học Internet of Things với Raspberry Pi </a> </h5>
+              <h5> <a href="#" class="card-title" style=" text-decoration:none"> Khóa học Internet of Things với
+                  Raspberry Pi </a> </h5>
             </div>
           </div>
         </div>
@@ -209,7 +218,8 @@
           <div class="card">
             <img src="img/khoahoc_php.jpg" class="card-img-top" alt="khoahocLaptrinhPhp">
             <div class="card-body">
-              <h5> <a href="#" class="card-title" style=" text-decoration:none"> Khoá học Lập trình PHP Doanh nghiệp 4.0 </a> </h5>
+              <h5> <a href="#" class="card-title" style=" text-decoration:none"> Khoá học Lập trình PHP Doanh nghiệp 4.0
+                </a> </h5>
             </div>
           </div>
         </div>
@@ -220,7 +230,8 @@
           <div class="card">
             <img src="img/khoahoc2_asp-net.jpg" class="card-img-top">
             <div class="card-body">
-              <h5 class="card-title"> <a href="#" style="text-decoration: none;"> Khóa học Lập trình web ASP.NET </a> </h5>
+              <h5 class="card-title"> <a href="#" style="text-decoration: none;"> Khóa học Lập trình web ASP.NET </a>
+              </h5>
             </div>
           </div>
         </div>
@@ -228,7 +239,8 @@
           <div class="card">
             <img src="img/khoahoc_autotest.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"> <a href="#" style="text-decoration: none;"> Khóa học Automation Testing với Selenium</a> </h5>
+              <h5 class="card-title"> <a href="#" style="text-decoration: none;"> Khóa học Automation Testing với
+                  Selenium</a> </h5>
             </div>
           </div>
         </div>
@@ -244,7 +256,8 @@
           <div class="card">
             <img src="img/khoahoc_android.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title"> <a href="#" style="text-decoration: none;"> Khoá học Lập trình Android với ứng dụng thực tế </a> </h5>
+              <h5 class="card-title"> <a href="#" style="text-decoration: none;"> Khoá học Lập trình Android với ứng
+                  dụng thực tế </a> </h5>
             </div>
           </div>
         </div>
@@ -253,9 +266,9 @@
   </div>
   </div>
 
-  <!--          END HIGHLIGHTS COURSE         -->
-
-  <!--           OPENING SCHEDULE      -->
+  <!--         KẾT THÚC KHÓA HỌC NỔI BẬT          -->
+  <br>
+  <!--           LỊCH KHAI GIẢNG     -->
 
   <div class="lichhoc">
     <div class="container">
@@ -276,7 +289,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học lập trình Web nâng cao</a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học lập trình Web nâng
+                cao</a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">50 giờ </div>
             <div class="item1 col-md-2 col-sm-2">Buổi tối </div>
@@ -285,7 +299,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none">Khóa học Lập trình web ASP.NET </a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none">Khóa học Lập trình web
+                ASP.NET </a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">42 giờ </div>
             <div class="item1 col-md-2 col-sm-2">18:00 - 20:00 </div>
@@ -294,7 +309,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khoá học Lập trình Android với ứng dụng thực tế </a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khoá học Lập trình Android
+                với ứng dụng thực tế </a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">56 giờ</div>
             <div class="item1 col-md-2 col-sm-2">19:30 - 21:30 </div>
@@ -303,7 +319,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học Internet of Things với Raspberry Pi</a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học Internet of Things
+                với Raspberry Pi</a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">36 giờ </div>
             <div class="item1 col-md-2 col-sm-2">18:00 - 21:00 </div>
@@ -312,7 +329,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học Automation Testing với Selenium</a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học Automation Testing
+                với Selenium</a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">42 giờ </div>
             <div class="item1 col-md-2 col-sm-2">18:00 - 20:00 </div>
@@ -321,7 +339,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học Tester & QA</a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa học Tester & QA</a>
+            </div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">44 giờ </div>
             <div class="item1 col-md-2 col-sm-2">18:00 - 20:00 </div>
@@ -330,7 +349,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa đào tạo Java web 4.0</a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khóa đào tạo Java web
+                4.0</a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">92 giờ </div>
             <div class="item1 col-md-2 col-sm-2">18:00 - 21:00 </div>
@@ -339,7 +359,8 @@
         </div>
         <div class="content col-md-12 col-sm-12 col-xs-12 ">
           <div class="item ">
-            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khoá học Lập trình PHP Doanh nghiệp 4.0</a></div>
+            <div class="item1 col-md-5 col-sm-4"> <a href="#" style=" text-decoration:none"> Khoá học Lập trình PHP
+                Doanh nghiệp 4.0</a></div>
             <div class="item1 col-md-1 col-sm-2">Liên hệ </div>
             <div class="item1 col-md-1 col-sm-2">56 giờ</div>
             <div class="item1 col-md-2 col-sm-2">19:30 - 21:30</div>
@@ -350,37 +371,46 @@
       <br>
     </div>
   </div>
+
+  <!--          KẾT THÚC LỊCH KHAI GIẢNG         -->
   <br>
-
-  <!--          END SCHEDULE         -->
-
-  <!--          EDUCATION      -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="get-started">
-          <h3>HỌC VIỆN ĐÀO TẠO CNTT NIIT - ICT HÀ NỘI</h3>
-          <p>Tiền thân là Trung tâm Tin học Công nghệ được thành lập ngày 11 tháng 6 năm 2002. NIIT - ICT HÀ NỘI có sứ mệnh đào tạo nguồn nhân lực CNTT phục vụ cho sự nghiệp Công nghiệp hóa - Hiện đại hóa của Việt Nam, hợp tác với đối tác trong và ngoài nước về đào tạo CNTT theo chuẩn doanh nghiệp và cung cấp nhân lực cho các doanh nghiệp công nghệ</p>
-          <p>Trụ sở chính của Học viện hiện nay ở Hà Nội tại Tầng 3 – tòa nhà 25T2 – Đường Nguyễn Thị Thập – Quận Cầu Giấy – Hà Nội, một vị trí khá thuận tiện bởi khuôn viên rộng rãi, gần các trường Đại học, Cao đẳng... của Hà Nội.</p>
-          <ul class="gioithieu">
-            <li>- Communication - Kỹ năng giao tiếp </li> <br>
-            <li>- Collaboration - Kỹ năng hợp tác</li> <br>
-            <li>- Creativity - Khả năng sáng tạo</li> <br>
-            <li>- Critical thinking - Tư duy phản biện</li> <br>
-            <li>- Digital literacy - Kiến thức công nghệ</li>
-          </ul>
+  <!--          GIỚI THIỆU      -->
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="get-started">
+            <h3>HỌC VIỆN ĐÀO TẠO CNTT NIIT - ICT HÀ NỘI</h3>
+            <p>Tiền thân là Trung tâm Tin học Công nghệ được thành lập ngày 11 tháng 6 năm 2002. NIIT - ICT HÀ NỘI có sứ
+              mệnh đào tạo nguồn nhân lực CNTT phục vụ cho sự nghiệp Công nghiệp hóa - Hiện đại hóa của Việt Nam, hợp
+              tác
+              với đối tác trong và ngoài nước về đào tạo CNTT theo chuẩn doanh nghiệp và cung cấp nhân lực cho các doanh
+              nghiệp công nghệ</p>
+            <p>Trụ sở chính của Học viện hiện nay ở Hà Nội tại Tầng 3 – tòa nhà 25T2 – Đường Nguyễn Thị Thập – Quận Cầu
+              Giấy – Hà Nội, một vị trí khá thuận tiện bởi khuôn viên rộng rãi, gần các trường Đại học, Cao đẳng... của
+              Hà
+              Nội.</p>
+            <ul class="gioithieu">
+              <li>- Communication - Kỹ năng giao tiếp </li> <br>
+              <li>- Collaboration - Kỹ năng hợp tác</li> <br>
+              <li>- Creativity - Khả năng sáng tạo</li> <br>
+              <li>- Critical thinking - Tư duy phản biện</li> <br>
+              <li>- Digital literacy - Kiến thức công nghệ</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="img2">
-          <img src="img/gioithieu_niic.jpg" alt="gioithieu" width="630px" height="530px">
+
+        <div class="col-md-6">
+          <div class="img2">
+            <img src="img/gioithieu_niic.jpg" alt="gioithieu" width="630px" height="530px">
+          </div>
         </div>
       </div>
     </div>
 
-    <!--          END EDUCATION         -->
+    <!--          KẾT THÚC GIỚI THIỆU        -->
     <br>
-    <!--           TEACHER      -->
+    <!--           GIẢNG VIÊN, CHƯƠNG TRÌNH    -->
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-sm-12">
@@ -388,7 +418,8 @@
             <div class="get_icon_des">
               <i class="fa fa-group" style="font-size: 40px; color: #cc3333;"></i>
               <h5>VỀ GIẢNG VIÊN</h5>
-              <p>Giảng viên là các CEO, Giám Đốc Công nghệ, Trưởng phòng công nghệ, Senior Developer, Team leader đến từ các doanh nghiệp là đối tác tuyển dụng...</p>
+              <p>Giảng viên là các CEO, Giám Đốc Công nghệ, Trưởng phòng công nghệ, Senior Developer, Team leader đến từ
+                các doanh nghiệp là đối tác tuyển dụng...</p>
             </div>
             <a href="#" style="color: #cc3333; text-decoration: none;"> Xem thêm</a>
           </div>
@@ -398,7 +429,8 @@
             <div class=" get_icon_des">
               <i class="fa fa-leanpub" style="font-size: 40px; color: #cc3333;"></i>
               <h5>VỀ CHƯƠNG TRÌNH HỌC</h5>
-              <p>Chương trình học bám sát nhu cầu tuyển dụng. Tính thực tiễn, phù hợp là yếu tố chúng tôi chúng tôi quan tâm hàng đầu</p>
+              <p>Chương trình học bám sát nhu cầu tuyển dụng. Tính thực tiễn, phù hợp là yếu tố chúng tôi chúng tôi quan
+                tâm hàng đầu</p>
               <a href="#" style="color: #cc3333; text-decoration: none;"> Xem thêm</a>
             </div>
           </div>
@@ -408,7 +440,8 @@
             <div class="get_icon_des">
               <i class="fa fa-television" style="font-size: 40px; color: #cc3333;"></i>
               <h5>VỀ CƠ SỞ VẬT CHẤT</h5>
-              <p>Cơ sở vật chất đáp ứng đầy đủ nhu cầu học tập. Phòng học máy tính chuẩn quốc tế, khuôn viên rộng rãi.</p>
+              <p>Cơ sở vật chất đáp ứng đầy đủ nhu cầu học tập. Phòng học máy tính chuẩn quốc tế, khuôn viên rộng rãi.
+              </p>
               <a href="#" style="color: #cc3333; text-decoration: none;"> Xem thêm</a>
             </div>
           </div>
@@ -416,9 +449,9 @@
       </div>
 
     </div>
-    <!--         END TEACHER         -->
-
-    <!--           NEWS, EVENTS      -->
+    <!--         KẾT THÚC GIẢNG VIÊN, CHƯƠNG TRÌNH        -->
+    <br>
+    <!--           TIN TỨC SỰ KIỆN      -->
     <section>
       <div class="container">
         <div class="heading1">
@@ -428,68 +461,77 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
             <div class="card h-100">
-              <img src="img/tintuc_sukien_Tester.jpg" class="card-img-top" alt="tintuc_sukien_Tester">
-              <div class="card-body">
-                <a href="#" style="text-decoration: none;">
-                  <h5 class="card-title">Bảo vệ cuối khóa lớp Tester & QA - Tháng 06/2018</h5>
-                </a>
-                <p class="card-text">Ngày 28/6 vừa qua là buổi học cuối cùng của lớp Tester & QA và cũng là buổi bảo vệ sản phẩm cuối khóa.</p>
-                <div class="new-img">
-                  <i class="fa fa-edit"> NIIT-NIC HANOI</i> &nbsp &nbsp
-                  <i class="fa fa-calendar">30/06/2021</i>
-                </div>
-              </div>
-            </div>
+            <?php
+            $row=mysqli_fetch_array($q); 
+         
+            echo"  <img src='img/tintuc_sukien_KhaiGiang.jpg' ".$row['image']."'>";
+              
+            echo"<div class='card-body'>" ;
+            echo"<a href='#' style='text-decoration: none;' >" ;  
+            echo"<h5 class='card-title' name = 'title'>" . $row['title'] ."</h5>" ;  
+            echo"</a>" ; 
+            echo"<p class='card-text' name =' import'>". $row['import'] . "</p>";  
+                
+             echo"</div>" ;
+
+            ?>
+        </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/tintuc_sukien_KhaiGiang.jpg" class="card-img-top" alt="tintuc_sukien_KhaiGiang">
-              <div class="card-body">
-                <a href="#" style="text-decoration: none;">
-                  <h5 class="card-title">Khai giảng khóa Begin Robot cho các Kỹ sư Robot tương lai</h5>
-                </a>
-                <p class="card-text">Ngày 01/07 vừa qua NIIT ICT Hà Nội đã khai giảng khóa học Begin Robot dành cho các kỹ sư Robot tương lai...</p>
-                <div class="new-img">
-                  <i class="fa fa-edit"> NIIT-NIC HANOI</i>&nbsp &nbsp
-                  <i class="fa fa-calendar">02/07/2018</i>
-                </div>
-              </div>
+            <?php
+              $row=mysqli_fetch_array($q); 
+         
+              echo"  <img src='img/tintuc_sukien_Laptrinhweb.jpg' ".$row['image']."'>";
+              
+              echo"<div class='card-body'>" ;
+              echo"<a href='#' style='text-decoration: none;' >" ;  
+              echo"<h5 class='card-title' name = 'title'>" . $row['title'] ."</h5>" ;  
+              echo"</a>" ; 
+              echo"<p class='card-text' name =' import'>". $row['import'] . "</p>";  
+                
+              echo"</div>" ;
+              ?>
 
             </div>
           </div>
           <div class="col">
             <div class="card h-100">
-              <img src="img/tintuc_sukien_Laptrinhweb.jpg" class="card-img-top" alt="tintuc_sukien_Laptrinhweb">
-              <div class="card-body">
-                <a href="#" style="text-decoration: none;">
-                  <h5 class="card-title">Khóa học Lập trình web với HTML5, CSS3 - FREE 28, 29/06</h5>
-                </a>
-                <p class="card-text">Ngày 28, 29/06 vừa qua NIIT - ICT Hà Nội đã triển khai thành công khóa học HTML5, CSS3 cho các bạn học viên, sinh viên.</p>
-                <div class="new-img">
-                  <i class="fa fa-edit"> NIIT-NIC HANOI</i> &nbsp &nbsp
-                  <i class="fa fa-calendar">03/06/2018</i>
-                </div>
-              </div>
+            <?php
+          $row=mysqli_fetch_array($q); 
+         
+            echo"  <img src='img/tintuc_sukien_Tester.jpg' ".$row['image']."'>";
+              
+             echo"<div class='card-body'>" ;
+             echo"<a href='#' style='text-decoration: none;' >" ;  
+             echo"<h5 class='card-title' name = 'title'>" . $row['title'] ."</h5>" ;  
+              echo"</a>" ; 
+              echo"<p class='card-text' name =' import'>". $row['import'] . "</p>";  
+                
+             echo"</div>" ;
+
+        ?>
             </div>
           </div>
         </div>
+        
 
       </div>
     </section>
-    <!--         END  NEWS, EVENTS           -->
-
-    <!--           ADVISE    -->
+    <!--         KẾT THÚC TIN TỨC SỰ KIỆN          -->
+    <br>
+    <!--           ĐĂNG KÝ TƯ VẤN   -->
     <section style="background-color: #add8e6">
-      <div class="container">
-        <div class="page-intro-regiser" style="text-align: center; ">
-          <a href="#"><button class=" btn_buy-cart button-c" type="submit"><i class="fa fa-check-square-o"> Đăng ký tư vấn</i></button> </a>
-        </div>
+      <div class="page-intro-regiser" style="text-align: center;">
+        <button class="consultant-register-button" type="submit">
+          <i class="fa fa-check-square-o">Đăng ký tư vấn</i>
+        </button>
       </div>
     </section>
 
-    <!--         END ADVISE         -->
-
-    <!--          SCHOLARSHIP      -->
+    <!--         KẾT THÚC ĐĂNG KÝ TƯ VẤN        -->
+    <br>
+    <!--         HỌC BỔNG      -->
 
     <div>
       <div class="newletter_des">
@@ -501,14 +543,15 @@
       </div>
     </div>
 
-    <!--          END SCHOLARSHIP        -->
-
+    <!--          KẾT THÚC HỌC BỔNG       -->
+    <br>
     <!--           FOOTER      -->
 
-    <section style="background:#3a3a3a;">
-      <div class="FOOTER">
-        <div class="col-md-4 col-sm-6">
-          <div class="footer1">
+    <div class="FOOTER">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4">
             <a href="#"> <img src="img/logo-footer.png" alt="NIIC-HaNoi"></a>
             <p style="color: #e6e6e6;">HỌC VIỆN ĐÀO TẠO CNTT NIIT - ICT HÀ NỘI <br>
               Dạy học Lập trình chất lượng cao (since 2002). Học Lập trình viên. Hành động ngay! <br>
@@ -517,14 +560,16 @@
             </p>
             <p><a href="#" style="color: #cc3333;">Email:hello@niithanoi.edu.vn</a> </p>
           </div>
-          <div class="col-md-4 col-sm-6">
+
+          <div class="col-md-4">
             <div class="footer2">
               <h5>GIỚI THIỆU</h5>
             </div>
           </div>
-          <div class="footer3">
-            <h5>KHÓA HỌC</h5>
-            <ul class="list">
+
+          <div class="col-md-4">
+            <h5 style=" color: white">KHÓA HỌC</h5>
+            <ul class="footer-list">
               <li> <a href="#" style="text-decoration: none;"> HỌC LẬP TRÌNH FULL STACK</a> </li>
               <li> <a href="#" style="text-decoration: none;"> BẢN QUYỀN NIIT ẤN ĐỘ</a></li>
               <li> <a href="#" style="text-decoration: none;"> CÔNG NGHỆ CHUYÊN SÂU</a></li>
@@ -535,8 +580,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <!--          END FOOTER        -->
+    </div>
+    <!--          KẾT THÚC FOOTER        -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>

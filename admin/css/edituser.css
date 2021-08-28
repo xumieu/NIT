@@ -47,7 +47,7 @@
   .content-left {
     background-color: black;
     width: 23%;
-    height: 900px;
+    height: 800px;
     float: left;
   }
   .content-right {
@@ -61,7 +61,7 @@
     background-color: #6495ed;
   }
   .row {
-    margin-left: 600px;
+    margin-left: 500px;
     margin-top: -150px;
   }
   .nav-item {
@@ -85,19 +85,30 @@
   .dropdown-menu a:hover {
     color: #6495ed;
   }
-/* NỘI DUNG*/
+/* Nội dung*/
 .content-right{
     width: 75%;
-    margin-left: 5%;
  }
- .content-right h2{
+ .content-right h3{
      color: #6495ED;
-      margin-top: 3%;
-
+     margin-left: 5%;
+     margin-top: 3%;
  }
- .btn-primary {
-    color: rgb(29, 28, 28);
-    background-color: #cbced1;
-    border-color: #c6c7c9;
+ 
+.table{
+width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: white;
+    margin-left: 13px;
+    margin-top: 30px;
 }
-
+.text-primary {
+    color: #6495ED !important;
+    margin-left: 10px;
+}
+.form-group{
+    margin-left :5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}

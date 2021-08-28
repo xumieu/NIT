@@ -46,8 +46,8 @@
   }
   .content-left {
     background-color: black;
-    width: 23%;
-    height: 800px;
+    width: 22%;
+    height: 900px;
     float: left;
   }
   .content-right {
@@ -61,7 +61,7 @@
     background-color: #6495ed;
   }
   .row {
-    margin-left: 500px;
+    margin-left: 600px;
     margin-top: -150px;
   }
   .nav-item {
@@ -85,30 +85,27 @@
   .dropdown-menu a:hover {
     color: #6495ed;
   }
-/*noi dung*/
-.content-right{
-    width: 75%;
- }
- .content-right h3{
-     color: #6495ED;
-     margin-left: 5%;
-     margin-top: 3%;
- }
- 
-.table{
-width: 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    background-color: white;
-    margin-left: 13px;
-    margin-top: 30px;
+/* NỘI DUNG*/
+.content-right {
+  width: 75%;
+}
+.content-right h3 {
+  color: #6495ed;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: white;
+  margin-left: 13px;
+  margin-top: 30px;
 }
 .text-primary {
-    color: #6495ED !important;
-    margin-left: 10px;
+  color: #6495ed !important;
+  margin-left: 10px;
 }
-.form-group{
-    margin-left :5%;
-    margin-right: 5%;
-    margin-top: 3%;
-}
+
+

@@ -1,3 +1,9 @@
+<?php
+$conn = mysqli_connect('localhost', 'root', '', 'niit');
+$sql = "select * from posts  ";
+$q = mysqli_query($conn, $sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,17 +11,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Thêm bài viết-Quản Trị Hệ Thống- NIIT ICT Hà Nội</title>
+  <title>Chỉnh sửa bài viết - NIIT-ICT HÀ NỘI </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="css/baiviet.css">
+  <link rel="stylesheet" href="css/quanlyuser.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
   <div class="title ">
     <div class="title-left">
-      <a href=""><img src="image/logo.png" alt=""></a>
+      <a href="#"><img src="image/logo.png" alt=""></a>
     </div>
     <div class="ad_logout title-right">
       <ul class="navbar-nav">
@@ -36,16 +42,16 @@
       </ul>
     </div>
     <div class="center">
-      <a class="" href="index.php" style="color: white;  "> <b>QUẢN TRỊ TRƯỜNG NIIT-ICT HÀ NỘI</b> </a>
+      <a class="" href="../index.php" style="color: white;  "> <b>QUẢN TRỊ TRƯỜNG NIIT-ICT HÀ NỘI</b> </a>
 
     </div>
   </div>
 
-  <div class="content" style="display: flex;">
+  <div class="content">
     <div class="content-left">
       <ul>
         <li class="nav-item1">
-          <a href="index.php">
+          <a href="../index.php">
             <i class="fa fa-home"> Trang chủ </i>
           </a>
 
@@ -56,9 +62,8 @@
             <i class="fa fa-list"> Quản trị danh mục</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Thembaiviet.php">Thêm bài viết</a>
-            <a class="dropdown-item" href="Chinhbaiviet.php">Chỉnh sửa bài viết</a>
-            <a class="dropdown-item" href="baivietdang.php">Bài viết đã đăng</a>
+            <a class="dropdown-item" href="../admin/thembaiviet.php">Thêm bài viết</a>
+            <a class="dropdown-item" href="../admin/dsbaiviet.php">Danh sách bài viết</a>
           </div>
         </li>
         <hr>
@@ -77,8 +82,8 @@
             <i class="fa fa-users"> User</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="quanlyuser.html">Quản lý user</a>
-            <a class="dropdown-item" href="danhsachquyen.php">Danh sách quyền</a>
+            <a class="dropdown-item" href="../admin/quanlyuser.php">Quản lý user</a>
+            <a class="dropdown-item" href="#">Danh sách quyền</a>
           </div>
         </li>
       </ul>
@@ -88,32 +93,55 @@
       <div id="page-wrapper">
         <form method="post" action="">
           <h3 id="result"></h3>
-          <h2 style="color: #6495ED">Thêm mới bài viết</h2>
+          <h2 style="color: #6495ED">Chỉnh sửa bài viết</h2>
+
           <div class="form-group">
             <label>Tiêu đề bài viết</label>
-            <input type="text" name="title" class="form-control" value="">
+            <input type="text" name="title" class="form-control" >
           </div>
+
           <div class="form-group">
             <label>Ảnh</label><br>
-            <input type="file" name="img">
+            <input type="file" name="image" >
           </div>
+
           <div class="form-group">
             <label>Nội dung</label>
-            <textarea name="content" class="form-control" style="height: 150px;"></textarea>
+            <textarea name="import" class="form-control" style="height: 150px;" ></textarea>
           </div>
 
 
           <div class="form-group">
             <label>Người viết</label>
-            <input type="text" name="username" class="form-control" value="">
+            <input type="text" name="writer" class="form-control" value="">
           </div>
-          <button type="submit" id="submit" name="submit" class="btn btn-primary ">Thêm mới</button>
+
+          <button type="submit" id="submit" name="submit" class="btn btn-primary ">Cập nhật</button>
         </form>
 
+        <?php
+        if (isset($_POST["submit"])) {
+
+          $title = $_POST["title"];
+          $image = $_POST["image"];
+          $import = $_POST["import"];
+          $writer = $_POST["writer"];
+          
+          $query2 = "UPDATE posts SET title = '$title', image = '$image', import = '$import' ,writer='$writer'  WHERE postid=$id";
+           mysqli_query($conn, $query2);
+
+          // echo "Bài viết đã thêm thành công";
+        }
+
+        ?>
+
+
+        </table>
       </div>
 
+
+
     </div>
-  </div>
 
 
 

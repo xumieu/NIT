@@ -1,8 +1,19 @@
 <?php
+session_start();
+
 $conn = mysqli_connect('localhost', 'root', '', 'niit');
 if (!$conn) {
   die('Khong the ket noi DB');
 };
+
+if (isset($_SESSION["ID"])) {
+  if ($_SESSION["role"] != "admin") {
+    header("location: login.php");
+  }
+} else {
+  header("location: login.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,13 +25,17 @@ if (!$conn) {
   <title>QUẢN TRỊ - NIIT ICT Hà Nội</title>
   <link rel="stylesheet" href="css/quantri.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+  <link rel="stylesheet" href="css/minimal.css">
+
+
+
 </head>
 
 <body>
-
   <div class="title ">
     <div class="title-left">
-      <a href=""><img src="image/logo.png" alt=""></a>
+      <a href="#"><img src="image/logo.png" alt=""></a>
     </div>
     <div class="ad_logout title-right">
       <ul class="navbar-nav">
@@ -52,25 +67,25 @@ if (!$conn) {
       <ul>
         <li class="nav-item1">
           <a href="../index.php" style="color: white;">
-            <i class="fa fa-home" > Trang chủ </i>
+            <i class="fa fa-home"> Trang chủ </i>
           </a>
 
         </li>
         <hr>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-             <i class="fa fa-list" > Quản trị danh mục</i> 
+            <i class="fa fa-list"> Quản trị danh mục</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="/admin/thembaiviet.php">Thêm bài viết</a>
-            <a class="dropdown-item" href="chinhsuabaiviet.php">Chỉnh sửa bài viết</a>
-            <a class="dropdown-item" href="baivietdang.php">Bài viết đã đăng</a>
+            <a class="dropdown-item" href="../admin/thembaiviet.php">Thêm bài viết</a>
+            <a class="dropdown-item" href="../admin/dsbaiviet.php">Danh sách bài viết</a>
+            
           </div>
         </li>
         <hr>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white;">
-            <i class="fa fa-image" > Quản trị giao diện</i>
+            <i class="fa fa-image"> Quản trị giao diện</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item  " href="#"> Hình ảnh</a>
@@ -83,19 +98,21 @@ if (!$conn) {
             <i class="fa fa-users" style="color: white;"> User</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="quanlyuser.php">Quản lý user</a>
+            <a class="dropdown-item" href="../admin/quanlyuser.php">Quản lý user</a>
             <a class="dropdown-item" href="danhsachquyen.php">Danh sách quyền</a>
           </div>
         </li>
       </ul>
 
     </div>
-    
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
 </body>
 
 </html>

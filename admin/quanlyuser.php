@@ -11,7 +11,7 @@ $q = mysqli_query($conn, $sql);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Quản lý User - QUẢN TRỊ NIIT-ICT HÀ NỘI </title>
+  <title>Quản lý User - NIIT-ICT HÀ NỘI </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="css/quanlyuser.css">
@@ -21,7 +21,7 @@ $q = mysqli_query($conn, $sql);
 <body>
   <div class="title ">
     <div class="title-left">
-      <a href=""><img src="image/logo.png" alt=""></a>
+      <a href="#"><img src="image/logo.png" alt=""></a>
     </div>
     <div class="ad_logout title-right">
       <ul class="navbar-nav">
@@ -42,8 +42,8 @@ $q = mysqli_query($conn, $sql);
       </ul>
     </div>
     <div class="center">
-      <a class="" href="index.php" style="color: white;  "> <b>QUẢN TRỊ TRƯỜNG NIIT-ICT HÀ NỘI</b> </a>
-      
+      <a class="" href="../index.php" style="color: white;  "> <b>QUẢN TRỊ TRƯỜNG NIIT-ICT HÀ NỘI</b> </a>
+
     </div>
   </div>
 
@@ -51,7 +51,7 @@ $q = mysqli_query($conn, $sql);
     <div class="content-left">
       <ul>
         <li class="nav-item1">
-          <a href="index.php">
+          <a href="../index.php">
             <i class="fa fa-home"> Trang chủ </i>
           </a>
 
@@ -62,9 +62,8 @@ $q = mysqli_query($conn, $sql);
             <i class="fa fa-list"> Quản trị danh mục</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Thembaiviet.php">Thêm bài viết</a>
-            <a class="dropdown-item" href="Chinhbaiviet.php">Chỉnh sửa bài viết</a>
-            <a class="dropdown-item" href="baivietdang.php">Bài viết đã đăng</a>
+            <a class="dropdown-item" href="../admin/thembaiviet.php">Thêm bài viết</a>
+            <a class="dropdown-item" href="../admin/dsbaiviet.php">Danh sách bài viết</a>
           </div>
         </li>
         <hr>
@@ -83,8 +82,8 @@ $q = mysqli_query($conn, $sql);
             <i class="fa fa-users"> User</i>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="quanlyuser.html">Quản lý user</a>
-            <a class="dropdown-item" href="danhsachquyen.php">Danh sách quyền</a>
+            <a class="dropdown-item" href="../admin/quanlyuser.php">Quản lý user</a>
+            <a class="dropdown-item" href="#">Danh sách quyền</a>
           </div>
         </li>
       </ul>
@@ -101,8 +100,8 @@ $q = mysqli_query($conn, $sql);
             <th>Fullname</th>
             <th>Role</th>
             <th class=" action">Option</th>
-            
-           
+
+
           </tr>
         </thead>
         </td>
@@ -128,6 +127,7 @@ $q = mysqli_query($conn, $sql);
 
       </table>
     </div>
+  
 
 
 
